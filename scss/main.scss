@@ -1,0 +1,40 @@
+
+.fontCinzel {
+    font-family: 'Cinzel', serif;
+}
+.fontMarcellus {
+    font-family: 'Marcellus', serif;
+}
+.text--alignCenter {
+    text-align: center;
+}
+.centerInXY {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+.centerInX {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.div--padding {
+    padding: 2%;
+}
+body {
+    background-image: url(img/fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.seccion-back {
+    background: transparent url('img/fondo_seccion.png') 0% 0% no-repeat padding-box;
+    border-radius: 90px;
+    background-size: cover;
+}
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.7),transparent);
+}
+.logoIndex {
+    height: 139px;
+}
