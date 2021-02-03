@@ -18,10 +18,10 @@
 
   <header class="container-fluid">
     <div class="row">
-      <div class="col-sm-4 col-md-2 centerInXY">
+      <div class="col-sm-4 col-md-3 col-lg-2 centerInXY">
         <a href="#HOME"><img src="img/logo_transparente.png" class="logoIndex" alt="logo Estudio Jurídico"></a>
       </div>
-      <div class="col-sm-8 col-md-4 text--alignCenter">
+      <div class="col-sm-8 col-md-9 col-lg-4 text--alignCenter">
         <a href="#HOME">
           <h1>Estudio Jurídico</h1>
         </a>
@@ -29,17 +29,20 @@
           <h2>SILVIA A. GUZMÁN & CAMILA MAÑEZ<br>ABOGADAS</h2>
         </a>
       </div>
-      <div class="col-md-6">
+      <div class="col-sm-12 col-md-12 col-lg-6">
         <nav class="navbar navbar-expand-sm">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav text--alignCenter">
             <li class="nav-item">
-              <a class="nav-link" href="#HOME">HOME</a>
+              <a role="button" class="nav-link active" data-target="#carouselExampleIndicators"
+                data-slide-to="0">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#AREAS">SECTOR LEGAL</a>
+              <a role="button" class="nav-link" data-target="#carouselExampleIndicators" data-slide-to="1">SECTOR
+                LEGAL</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#CONTACTO">AGENDÁ UNA CONSULTA</a>
+              <a role="button" class="nav-link" data-target="#carouselExampleIndicators" data-slide-to="2">AGENDÁ UNA
+                CONSULTA</a>
             </li>
           </ul>
         </nav>
@@ -50,84 +53,104 @@
   <div class="container-fluid">
     <div class="">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
+
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="container-fluid seccion-back">
               <div class="row">
                 <div class="col-md-6 order-md-2 text--alignCenter">
-                  <h2>TRAYECTORIA & PROYECCIÓN</h2>
+                  <h2 id="HOME">TRAYECTORIA & PROYECCIÓN</h2>
                   <p>Somos un Estudio Jurídico con más de 35 años de Trayectoria en Asesoría Legal, enraizado, con una
                     mirada hacia la innovación y el futuro, que lleve al crecimiento: Proyección.</p>
                   <p>te acompañamos en cada faceta de tu vida, ya sea personal o comercial, como emprendedor, artista o
                     <br>creativo. <br> bases sólidas. <br> soluciones. <br> evitando el litigio.
                   </p>
-                  <p>¿TE INTERESA NUESTRO APPROACH? ENTONCES TRABAJEMOS JUNTOS</p>
                 </div>
                 <div class="col-md-3 order-md-1 centerInXY div--padding">
                   <img src="img/seccion1.png" class="img-fluid" alt="imagen home">
                 </div>
-                <div class="col-md-3 order-md-3 centerInXY div--padding">
+                <div class="col-md-3 order-md-3 centerInXY div--padding logoSeccion1">
                   <img src="img/logo_solido.png" class="img-fluid" alt="logo Estudio Jurídico">
+                </div>
+                <div class="col-md-12 order-md-3 text--alignCenter">
+                  <p>¿TE INTERESA NUESTRO APPROACH?<br>ENTONCES TRABAJEMOS JUNTOS</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="carousel-item">
-            <div class="container-fluid">
+            <div class="container-fluid seccion-back">
               <div class="row">
-                <div class="col-md-4">
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi mollitia perferendis distinctio
-                    id
-                    delectus, quam voluptas earum assumenda porro eligendi omnis, doloremque eos architecto sint alias
-                    temporibus repudiandae recusandae accusamus.</p>
+                <div class="col-md-12 text--alignCenter">
+                  <h2 id="AREAS">SECTOR LEGAL</h2>
+                  <P>Te brindamos soluciones en las siguientes áreas</P>
                 </div>
-                <div class="col-md-4">
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi mollitia perferendis distinctio
-                    id
-                    delectus, quam voluptas earum assumenda porro eligendi omnis, doloremque eos architecto sint alias
-                    temporibus repudiandae recusandae accusamus.</p>
+                <div class="col-md-4 order-md-1 sectorLegal1">
+                  <ul>
+                    <li>Derecho Civil & Comercial</li>
+                    <li>Contratos</li>
+                    <li>Propiedad Horizontal</li>
+                    <li>Derechos Posesorios y Hereditarios</li>
+                    <li>Sucesiones</li>
+                    <li>Responsabilidad Civil</li>
+                    <li>Daños y Perjuicios</li>
+                    <li>Constitucional</li>
+                    <li>Amparos</li>
+                    <li>Habeas Data</li>
+                    <li>Recursos</li>
+                  </ul>
                 </div>
-                <div class="col-md-4">
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi mollitia perferendis distinctio
-                    id
-                    delectus, quam voluptas earum assumenda porro eligendi omnis, doloremque eos architecto sint alias
-                    temporibus repudiandae recusandae accusamus.</p>
+                <div class="col-md-4 order-md-3 sectorLegal2">
+                  <ul>
+                    <li>Propiedad Intelectual</li>
+                    <li>Marcas</li>
+                    <li>Patentes</li>
+                    <li>Derechos de Autor</li>
+                    <li>Registro de Obras de Arte</li>
+                    <li>Software - Páginas web - Dominio</li>
+                    <li>Diseños y Modelos Industriales</li>
+                    <li>Licensing y Autorizaciones de Uso</li>
+                    <li>Legaltech</li>
+                    <li>Protección de Datos Personales</li>
+                    <li>Mercado Digital</li>
+                  </ul>
+                </div>
+                <div class="col-md-4 order-md-2 centerInXY div--padding">
+                  <img src="img/seccion2.png" class="img-fluid" alt="imagen home">
                 </div>
               </div>
             </div>
 
           </div>
           <div class="carousel-item">
-            <div class="container-fluid">
+            <div class="container-fluid seccion-back">
               <div class="row">
-                <div class="col-md-3">
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi mollitia perferendis distinctio
-                    id
-                    delectus, quam voluptas earum assumenda porro eligendi omnis, doloremque eos architecto sint alias
-                    temporibus repudiandae recusandae accusamus.</p>
+                <div class="col-md-12 text--alignCenter">
+                  <h2 id="CONTACTO">AGENDÁ TU CONSULTA</h2>
+                  <P>Trabajemos tu caso, elegí una modalidad:</P>
                 </div>
-                <div class="col-md-3">
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi mollitia perferendis distinctio
-                    id
-                    delectus, quam voluptas earum assumenda porro eligendi omnis, doloremque eos architecto sint alias
-                    temporibus repudiandae recusandae accusamus.</p>
+                <div class="col-md-3 grid-contacto-item text--alignCenter">
+                  <h3>ESCRITA</h3>
+                  <a href="mailto:guzman.juridico@gmail.com"><img src="icon/icon_send_w.png" class="icon-contacto"
+                      alt="icono enviar">GUZMAN.JURIDICO@GMAIL.COM</a>
                 </div>
-                <div class="col-md-3">
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi mollitia perferendis distinctio
-                    id
-                    delectus, quam voluptas earum assumenda porro eligendi omnis, doloremque eos architecto sint alias
-                    temporibus repudiandae recusandae accusamus.</p>
+                <div class="col-md-3 grid-contacto-item text--alignCenter">
+                  <h3>VIRTUAL</h3>
+                  <a href="GoogleMeet"><img src="icon/icon_meet.png" class="icon-contacto" alt="icono GoogleMeet">GOOGLE
+                    MEET</a>
                 </div>
-                <div class="col-md-3">
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi mollitia perferendis distinctio
-                    id
-                    delectus, quam voluptas earum assumenda porro eligendi omnis, doloremque eos architecto sint alias
-                    temporibus repudiandae recusandae accusamus.</p>
+                <div class="col-md-3 grid-contacto-item text--alignCenter">
+                  <h3>WHATSAPP</h3>
+                  <a href=""><img src="icon/Icon_whatsapp_w.png" class="icon-contacto" alt="icono WhatsApp">+54 9 (351)
+                    622 9706</a><br>
+                  <a href=""><img src="icon/Icon_whatsapp_w.png" class="icon-contacto" alt="icono WhatsApp">+54 9 (351)
+                    772 4589</a>
+                </div>
+                <div class="col-md-3 grid-contacto-item text--alignCenter">
+                  <h3>PRESENCIAL</h3>
+                  <a href=""><img src="icon/Icon_location_w.png" class="icon-contacto" alt="icono localización">SUCRE 62
+                    - 6TO "A"<br>B°
+                    CENTRO<br>CÓRDOBA - ARGENTINA</a>
                 </div>
               </div>
             </div>
@@ -142,9 +165,7 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-
     </div>
-
   </div>
 
   <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->

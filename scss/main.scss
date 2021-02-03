@@ -11,7 +11,7 @@
 .centerInXY {
     display: grid;
     align-content: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .centerInX {
     display: flex;
@@ -37,4 +37,64 @@ header {
 }
 .logoIndex {
     height: 139px;
+}
+.navbar {
+    display: grid!important;
+    align-content: center;
+    justify-content: center;
+}
+.sectorLegal1 {
+    display: flex;
+    justify-content: center;
+    ul {
+        list-style-type: none;
+        padding-inline-start: 80px
+    }
+    li {
+        width: 100%;  
+    }
+}
+.sectorLegal2 {
+    display: flex;
+    justify-content: center;
+    ul {
+        list-style-type: none;
+        padding-inline-start: 0px
+    }
+    li {
+        width: 100%;  
+    }
+}
+.grid-contacto-item {
+    display: grid;
+    align-content: baseline;
+    justify-content: space-evenly;
+}
+.icon-contacto {
+    width: 30px;
+}
+
+//----------------------------------------------------------------------------------------------RESPONSIVE
+@media (max-width: 767px) {
+    .logoSeccion1 {
+        display: none;
+    }
+    .sectorLegal1 {
+        display: flex;
+        justify-content: center;
+        ul {
+            list-style-type: none;
+            padding-inline-start: 0px
+        }    
+    }
+    .sectorLegal2 {
+        display: flex;
+        justify-content: center;
+        ul {
+            list-style-type: none;
+            padding-inline-start: 0px
+        }
+    
+    }
+    
 }
