@@ -68,6 +68,31 @@ header {
 .icon-contacto {
   width: 30px; }
 
+.img-seccion3 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-content: center; }
+  .img-seccion3 img {
+    padding-right: 15%; }
+
+.text-seccion3 {
+  display: grid;
+  justify-content: flex-start;
+  align-content: center;
+  text-align: center; }
+
+footer {
+  background-image: url(img/fondo_footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.contacto-copyright {
+  display: flex;
+  flex-flow: column-reverse wrap;
+  align-content: flex-start; }
+
 @media (max-width: 767px) {
   .logoSeccion1 {
     display: none; }
@@ -82,4 +107,21 @@ header {
     justify-content: center; }
     .sectorLegal2 ul {
       list-style-type: none;
-      padding-inline-start: 0px; } }
+      padding-inline-start: 0px; }
+  .img-seccion3 {
+    justify-content: center; }
+    .img-seccion3 img {
+      padding-right: 0%; }
+  .text-seccion3 {
+    justify-content: center; }
+  .contacto-copyright {
+    display: flex;
+    flex-flow: column-reverse wrap;
+    align-content: center; } }
+
+@media (max-width: 1024px) {
+  .contacto-whatsapp {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-start;
+    justify-content: center; } }
