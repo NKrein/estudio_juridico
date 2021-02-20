@@ -4,6 +4,21 @@
 .fontMarcellus {
   font-family: 'Marcellus', serif; }
 
+.fontSize18 {
+  font-size: 18px; }
+
+.fontSize20 {
+  font-size: 20px; }
+
+.fontSize22 {
+  font-size: 22px; }
+
+.fontSize24 {
+  font-size: 24px; }
+
+.fontSize30 {
+  font-size: 30px; }
+
 .text--alignCenter {
   text-align: center; }
 
@@ -20,7 +35,29 @@
 .div--padding {
   padding: 2%; }
 
+.headerLink a {
+  color: white;
+  text-decoration: none; }
+
+.headerLink a:hover {
+  color: beige;
+  text-decoration: none;
+  transform: scale(1.1);
+  transition: all 0.5s; }
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+  padding-right: 0.9rem !important;
+  padding-left: 0.9rem !important; }
+
+.nav-item a:hover {
+  color: beige;
+  transform: scale(1.1);
+  transition: all 0.5s; }
+
 body {
+  color: white;
   background-image: url(img/fondo.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -88,10 +125,34 @@ footer {
   background-size: cover;
   background-position: center; }
 
+.btnContacto-footer {
+  display: grid;
+  align-content: space-evenly;
+  justify-content: end; }
+  .btnContacto-footer a {
+    color: black; }
+  .btnContacto-footer a:hover {
+    color: darkslategray;
+    text-decoration: none; }
+
+.contacto-qrWhatsapp {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 18;
+  color: black; }
+
 .contacto-copyright {
   display: flex;
   flex-flow: column-reverse wrap;
-  align-content: flex-start; }
+  align-content: flex-start;
+  color: black; }
+  .contacto-copyright a {
+    color: black; }
+  .contacto-copyright a:hover {
+    color: brown;
+    text-decoration: none; }
 
 @media (max-width: 767px) {
   .logoSeccion1 {
