@@ -18,21 +18,21 @@
 
   <header class="container-fluid fontMarcellus">
     <div class="row">
-      <div class="col-sm-4 col-md-3 col-lg-2 centerInXY headerLink">
+      <div class="col-4 col-sm-4 col-md-3 order-md-1 order-lg-1 col-lg-2 centerInXY headerLink div-padding">
         <a role="button" class="active" data-target="#carouselExampleIndicators"
         data-slide-to="0"><img src="img/logo_transparente.png" class="logoIndex" alt="logo Estudio Jurídico"></a>
       </div>
-      <div class="col-sm-8 col-md-9 col-lg-4 text--alignCenter centerInXY headerLink">
+      <div class="col-8 col-sm-8 col-md-7 col-lg-4 order-md-2 order-lg-2 text--alignCenter centerInXY headerLink text-header-justify div-padding">
         <a role="button" class="active" data-target="#carouselExampleIndicators"
         data-slide-to="0">
-          <h1 class="fontSize20">Estudio Jurídico</h1>
-          <h2 class="fontSize22">SILVIA A. GUZMÁN & CAMILA MAÑEZ</h2>
-          <h2 class="fontSize20">ABOGADAS</h2>
+          <h1 class="logo-fontSize20">Estudio Jurídico</h1>
+          <h2 class="logo-fontSize22">SILVIA A. GUZMÁN & CAMILA MAÑEZ</h2>
+          <h2 class="logo-fontSize20">ABOGADAS</h2>
         </a>
       </div>
-      <div class="col-sm-12 col-md-12 col-lg-6 centerInXY">
+      <div class="col-lg-6 order-lg-3 centerInXY">
         <nav class="navbar navbar-expand-sm">
-          <ul class="navbar-nav text--alignCenter">
+          <ul class="navbar-nav text--alignCenter text-shadow">
             <li class="nav-item">
               <a role="button" class="nav-link active" data-target="#carouselExampleIndicators"
                 data-slide-to="0">HOME</a>
@@ -48,6 +48,31 @@
           </ul>
         </nav>
       </div>
+      <div class="col-12 col-md-2 order-md-3 burger-menu text--alignCenter">
+        <p>
+          <button class="btn" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <img src="icon/Icon_burger.png" alt="icono menu">
+          </button>
+        </p>
+      </div>
+      <div class="col-md-12 col-md-12 order-md-4 collapse" id="collapseExample">
+        <ul class="navbar-nav text--alignCenter menu-back">
+          <li class="nav-item" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <a role="button" id="menu-item"  class="nav-link active" data-target="#carouselExampleIndicators"
+              data-slide-to="0">HOME</a>
+          </li>
+          <li class="nav-item" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <a role="button" id="menu-item"  class="nav-link" data-target="#carouselExampleIndicators" data-slide-to="1">SECTOR
+              LEGAL</a>
+          </li>
+          <li class="nav-item" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <a role="button" id="menu-item"  class="nav-link" data-target="#carouselExampleIndicators" data-slide-to="2">AGENDÁ UNA
+              CONSULTA</a>
+          </li>
+        </ul>
+      </div>
+
+
     </div>
   </header>
 
@@ -74,7 +99,7 @@
                 <div class="col-md-3 order-md-3 centerInXY div-padding logoSeccion1">
                   <img src="img/logo_solido.png" class="img-fluid" alt="logo Estudio Jurídico">
                 </div>
-                <div class="col-md-12 order-md-3 text--alignCenter nav-item">
+                <div class="col-md-12 order-md-3 text--alignCenter nav-item margin-final-seccion">
                   <a role="button" id="mensaje" class="fontMarcellus fontSize22 nav-link" data-target="#carouselExampleIndicators" data-slide-to="2" onmouseover="this.innerHTML='AGENDÁ UNA CONSULTA<br>→'" onmouseout="this.innerHTML='¿TE INTERESA NUESTRO APPROACH?<br>ENTONCES TRABAJEMOS JUNTOS'">¿TE INTERESA NUESTRO APPROACH?<br>ENTONCES TRABAJEMOS JUNTOS</a>
                 </div>
               </div>
@@ -107,7 +132,7 @@
                   <img src="img/seccion2.png" class="img-fluid" alt="imagen seccion 2">
                 </div>
 
-                <div class="col-md-4 order-md-3 sectorLegal2">
+                <div class="col-md-4 order-md-3 sectorLegal2 margin-final-seccion">
                   <ul>
                     <li>Propiedad Intelectual</li>
                     <li>Marcas</li>
@@ -161,8 +186,8 @@
                 <div class="col-md-4 text-seccion3 fontSize22">
                   <p>Costos y formas de pago a convenir</p>
                 </div>
-                <div class="col-md-12 text--alignCenter fontSize24">
-                  <h4>Escribinos por Mail o por WhatsApp para concretar la modalidad, fecha y hora de tu consulta</h4>
+                <div class="col-md-12 text--alignCenter margin-final-seccion">
+                  <h4 class="mensajeFinalSeccion3" >Escribinos por Mail o por WhatsApp para concretar la modalidad, fecha y hora de tu consulta</h4>
                 </div>
               </div>
             </div>

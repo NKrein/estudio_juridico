@@ -13,9 +13,17 @@ html, body {
 }
 .carousel-control-next-icon {
     background-image: url(icon/Icon_right.png);
+    align-self: flex-end;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 30px;
 }
 .carousel-control-prev-icon {
     background-image: url(icon/Icon_left.png);
+    align-self: flex-end;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 30px;
 }
 .fontCinzel {
     font-family: 'Cinzel', serif;
@@ -24,6 +32,12 @@ html, body {
 .fontMarcellus {
     font-family: 'Marcellus', serif;
     
+}
+.logo-fontSize20 {
+    font-size: 20px;
+}
+.logo-fontSize22 {
+    font-size: 22px;
 }
 .fontSize18 {
     font-size: 18px;
@@ -53,6 +67,9 @@ html, body {
     flex-direction: row;
     justify-content: center;
 }
+.text-header-justify {
+    justify-content: start;
+}
 .headerLink {
     a {
         color: white;
@@ -81,9 +98,9 @@ html, body {
 body {
     color: white;
     background-image: url(img/fondo.png);
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
 }
 .seccion-back {
     background: transparent url('img/fondo_seccion.png') 0% 0% no-repeat padding-box;
@@ -98,8 +115,24 @@ header {
 .logoIndex {
     height: 139px;
 }
+.text-shadow{
+    text-shadow: 2px 2px rgba(0,0,0,0.7);
+}
+.burger-menu {
+    display: none;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 15px;
+    img {
+        width: 25px;
+    }
+}
+.menu-back {
+    display: none;
+    background-color: rgba(0,0,0,0.4);
+}
 .navbar {
-    display: grid!important;
+    display: grid;
     align-content: center;
     justify-content: center;
 }
@@ -134,7 +167,7 @@ header {
     padding-bottom: 3vh;
 }
 .icon-contacto {
-    width: 30px;
+    height: 18px;
 }
 .img-seccion3 {
     display: flex;
@@ -150,6 +183,12 @@ header {
     justify-content: flex-start;
     align-content: center;
     text-align: center;
+}
+.mensajeFinalSeccion3 {
+    font-size: 1.5rem;
+}
+.margin-final-seccion {
+    margin-bottom: 2rem;
 }
 footer {
     background-image: url(img/fondo_footer.png);
@@ -192,6 +231,24 @@ footer {
     }
 }
 //----------------------------------------------------------------------------------------------RESPONSIVE
+@media (max-width: 576px) {
+    .text-header-justify {
+        justify-content: center;
+    }
+    .logo-fontSize20 {
+        font-size: 18px;
+    }
+    .logo-fontSize22 {
+        font-size: 20px;
+    }
+    .menu-back {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-flow: column wrap!important;
+    }
+    
+}
 @media (max-width: 767px) {
     .seccion-back {
         border-radius: 45px;
@@ -200,6 +257,7 @@ footer {
         display: none;
     }
     .sectorLegal1 {
+        text-align: center;
         display: flex;
         justify-content: center;
         ul {
@@ -208,6 +266,7 @@ footer {
         }    
     }
     .sectorLegal2 {
+        text-align: center;
         display: flex;
         justify-content: center;
         ul {
@@ -225,6 +284,12 @@ footer {
     .text-seccion3 {
         justify-content: center;
     }
+    .margin-final-seccion {
+        margin-bottom: 3rem;
+    }
+    .mensajeFinalSeccion3 {
+        font-size: 1.4rem;
+    }
     .contacto-copyright {
         display: flex;
         flex-flow: column-reverse wrap;
@@ -235,7 +300,21 @@ footer {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 991px) {
+    .navbar {
+        display: none;
+    }
+    .burger-menu {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+    .menu-back {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-flow: row wrap;
+    }
     .contacto-whatsapp {
         display: flex;
         flex-flow: column wrap;
