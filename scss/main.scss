@@ -1,4 +1,22 @@
-
+html, body {
+    min-height: 100vh;
+}
+.full25vh {
+    min-height: 25vh;
+}
+.full50vh {
+    min-height: 50vh;
+}
+.div-padding {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+.carousel-control-next-icon {
+    background-image: url(icon/Icon_right.png);
+}
+.carousel-control-prev-icon {
+    background-image: url(icon/Icon_left.png);
+}
 .fontCinzel {
     font-family: 'Cinzel', serif;
 }
@@ -34,9 +52,6 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
-.div--padding {
-    padding: 2%;
 }
 .headerLink {
     a {
@@ -74,9 +89,11 @@ body {
     background: transparent url('img/fondo_seccion.png') 0% 0% no-repeat padding-box;
     border-radius: 90px;
     background-size: cover;
+    min-height: 65vh;
 }
 header {
     background-image: linear-gradient(rgba(0,0,0,0.7),transparent);
+    min-height: 17.5vh;
 }
 .logoIndex {
     height: 139px;
@@ -113,6 +130,8 @@ header {
     display: grid;
     align-content: baseline;
     justify-content: space-evenly;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
 }
 .icon-contacto {
     width: 30px;
@@ -137,6 +156,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    min-height: 17.5vh;
 }
 .btnContacto-footer {
     display: grid;
@@ -173,6 +193,9 @@ footer {
 }
 //----------------------------------------------------------------------------------------------RESPONSIVE
 @media (max-width: 767px) {
+    .seccion-back {
+        border-radius: 45px;
+    }
     .logoSeccion1 {
         display: none;
     }
@@ -206,6 +229,9 @@ footer {
         display: flex;
         flex-flow: column-reverse wrap;
         align-content: center;
+    }
+    .contacto-qrWhatsapp {
+        display: none;
     }
 }
 
