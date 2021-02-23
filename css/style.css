@@ -154,8 +154,17 @@ header {
   padding-top: 3vh;
   padding-bottom: 3vh; }
 
+.grid-contacto-whatsapp {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center; }
+
 .icon-contacto {
   height: 18px; }
+
+.icon-contacto-seccion3 {
+  width: 60px; }
 
 .img-seccion3 {
   display: flex;
